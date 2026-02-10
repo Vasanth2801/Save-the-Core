@@ -43,9 +43,10 @@ GameObject:
   - component: {fileID: 1836609442508363090}
   - component: {fileID: 4459780870511126483}
   - component: {fileID: 6697865859984698122}
+  - component: {fileID: -1640208638230301398}
   m_Layer: 0
   m_Name: RangedEnemy(Energy)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b81325ae454501f4f995e58df72eee47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  enemySpeed: 30
+  enemySpeed: 40
   target: {fileID: 0}
   rotationSpeed: 0.025
   bulletForce: 12
@@ -162,6 +163,20 @@ MonoBehaviour:
   fireRate: 0.6
   timer: 0
   firePoint: {fileID: 8999631762257823276}
+--- !u!114 &-1640208638230301398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2978369479885851847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ce4b12f2112c98449edacd0db886c5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  maxHealth: 50
+  minHealth: 0
 --- !u!1 &6231044443243258763
 GameObject:
   m_ObjectHideFlags: 0
